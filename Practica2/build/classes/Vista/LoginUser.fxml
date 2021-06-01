@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.LoginUserController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="286.0" style="-fx-background-color: #3498db;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="318.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="user" layoutX="57.0" layoutY="154.0" promptText="Usuario" />
+            <PasswordField fx:id="pass" layoutX="57.0" layoutY="225.0" promptText="Contraseña" />
+            <Button fx:id="Ingresar" layoutX="68.0" layoutY="295.0" mnemonicParsing="false" onAction="#AccionEventIngresar" style="-fx-background-color: #3498db;" text="Ingresar" textFill="WHITE" />
+            <Button fx:id="Close" layoutX="182.0" layoutY="295.0" mnemonicParsing="false" onAction="#AccionEventClose" style="-fx-background-color: #3498db;" text="Cerrar" textFill="WHITE" />
+            <Label fx:id="advertencia" alignment="CENTER" layoutX="30.0" layoutY="109.0" prefHeight="25.0" prefWidth="241.0" textFill="#e81717" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
